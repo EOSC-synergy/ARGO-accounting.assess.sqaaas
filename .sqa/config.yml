@@ -1,0 +1,60 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/ARGOeu/ARGO-accounting:
+      branch: devel
+      repo: https://github.com/ARGOeu/ARGO-accounting
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.7
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/ARGOeu/ARGO-accounting git:
+        commands:
+        - /usr/bin/env sh .sqa/script.thirsty-auburn-worm.sh
+        container: qc.acc_hazy-saffron-dhole
+  QC.Doc:
+    repos:
+      github.com/ARGOeu/ARGO-accounting find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-beige-barb.sh
+        container: qc.doc_sloppy-ochre-budgerigar
+      github.com/ARGOeu/ARGO-accounting git:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-magnolia-avocet.sh
+        container: qc.doc_lumpy-gamboge-wallaby
+      github.com/ARGOeu/ARGO-accounting markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.whiny-scarlet-coati.sh
+        container: qc.doc_lumpy-puce-squid
+  QC.Lic:
+    repos:
+      github.com/ARGOeu/ARGO-accounting licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.frumpy-zucchini-lemming.sh
+        container: qc.lic_tacky-saffron-guppy
+  QC.Sty:
+    repos:
+      github.com/ARGOeu/ARGO-accounting checkstyle:
+        commands:
+        - /usr/bin/env sh .sqa/script.wimpy-malachite-cassowary.sh
+        container: qc.sty_flaky-dandelion-wolverine
+      github.com/ARGOeu/ARGO-accounting hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.foggy-cinnamon-booby.sh
+        container: qc.sty_wimpy-emerald-fly
+      github.com/ARGOeu/ARGO-accounting jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.muzzy-chartreuse-barnacle.sh
+        container: qc.sty_smelly-chestnut-squid
+  QC.Ver:
+    repos:
+      github.com/ARGOeu/ARGO-accounting get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.homely-cyan-bombay.sh
+        container: qc.ver_gimpy-crimson-macaque
+timeout: 5400
