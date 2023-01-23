@@ -1,4 +1,4 @@
 (
-cd github.com/argoeu/argo-accounting &&
+cd github.com/ARGOeu/argo-accounting &&
     licensee detect . --confidence 60 --json
 )
