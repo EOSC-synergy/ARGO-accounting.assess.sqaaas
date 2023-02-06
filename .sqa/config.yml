@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/ARGOeu/argo-accounting:
-      branch: devel
+      branch: main
       repo: https://github.com/ARGOeu/argo-accounting
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.8
@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/ARGOeu/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-crimson-fousek.sh
-        container: qc.acc_nippy-scarlet-tiger
+        - /usr/bin/env sh .sqa/script.frumpy-magenta-affenpinscher.sh
+        container: qc.acc_flimsy-scarlet-numbat
   QC.Doc:
     repos:
       github.com/ARGOeu/argo-accounting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-crimson-gar.sh
-        container: qc.doc_cranky-magenta-capybara
+        - /usr/bin/env sh .sqa/script.ready-plum-dragon.sh
+        container: qc.doc_lumpy-seashell-foxhound
       github.com/ARGOeu/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-azure-dunker.sh
-        container: qc.doc_homey-gamboge-dodo
+        - /usr/bin/env sh .sqa/script.slaphappy-beige-dragon.sh
+        container: qc.doc_freaky-chartreuse-drever
       github.com/ARGOeu/argo-accounting markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-white-stingray.sh
-        container: qc.doc_gamy-alizarin-chameleon
+        - /usr/bin/env sh .sqa/script.scummy-amber-dormouse.sh
+        container: qc.doc_snappy-aquamarine-guppy
   QC.Lic:
     repos:
       github.com/ARGOeu/argo-accounting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-russet-seahorse.sh
-        container: qc.lic_lovely-flax-mandrill
+        - /usr/bin/env sh .sqa/script.grumpy-lime-gibbon.sh
+        container: qc.lic_dorky-grey-neanderthal
   QC.Sty:
     repos:
       github.com/ARGOeu/argo-accounting checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-olivine-starfish.sh
-        container: qc.sty_beady-cornflower-dalmatian
+        - /usr/bin/env sh .sqa/script.hilly-jade-squirrel.sh
+        container: qc.sty_whiny-bistre-dane
       github.com/ARGOeu/argo-accounting hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-salmon-gibbon.sh
-        container: qc.sty_boozy-orchid-coati
+        - /usr/bin/env sh .sqa/script.flabby-olivine-mastiff.sh
+        container: qc.sty_ugly-crimson-kudu
       github.com/ARGOeu/argo-accounting jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-mustard-sheepdog.sh
-        container: qc.sty_muggy-crimson-woodlouse
+        - /usr/bin/env sh .sqa/script.homey-olivine-newfoundland.sh
+        container: qc.sty_jumpy-myrtle-crocodile
   QC.Ver:
     repos:
       github.com/ARGOeu/argo-accounting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-brass-baboon.sh
-        container: qc.ver_woozy-cornflower-fousek
+        - /usr/bin/env sh .sqa/script.skanky-grey-deer.sh
+        container: qc.ver_surly-wisteria-akita
 timeout: 5400
