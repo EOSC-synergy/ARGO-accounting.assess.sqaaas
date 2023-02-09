@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/ARGOeu/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-tan-chipmunk.sh
-        container: qc.acc_clammy-indigo-olm
+        - /usr/bin/env sh .sqa/script.snappy-maroon-capybara.sh
+        container: qc.acc_breezy-chartreuse-whale
   QC.Doc:
     repos:
       github.com/ARGOeu/argo-accounting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-turquoise-nightingale.sh
-        container: qc.doc_stuffy-platinum-beetle
+        - /usr/bin/env sh .sqa/script.lovely-amber-balinese.sh
+        container: qc.doc_homely-linen-hornet
       github.com/ARGOeu/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-sepia-kiwi.sh
-        container: qc.doc_dorky-saffron-booby
+        - /usr/bin/env sh .sqa/script.cloudy-rose-fousek.sh
+        container: qc.doc_cranky-platinum-lion
       github.com/ARGOeu/argo-accounting markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-lime-newt.sh
-        container: qc.doc_wiggy-magenta-eel
+        - /usr/bin/env sh .sqa/script.squeaky-grey-maltese.sh
+        container: qc.doc_gimpy-purple-wolverine
   QC.Lic:
     repos:
       github.com/ARGOeu/argo-accounting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-alizarin-lemming.sh
-        container: qc.lic_pasty-bistre-millipede
+        - /usr/bin/env sh .sqa/script.squeaky-lime-bobcat.sh
+        container: qc.lic_nippy-cream-newfoundland
   QC.Met:
     repos:
       github.com/ARGOeu/argo-accounting cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-azure-heron.sh
-        container: qc.met_snappy-yellow-goose
+        - /usr/bin/env sh .sqa/script.pretty-cerulean-insect.sh
+        container: qc.met_pokey-lime-coral
   QC.Ver:
     repos:
       github.com/ARGOeu/argo-accounting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-linen-maltese.sh
-        container: qc.ver_flabby-rust-bombay
+        - /usr/bin/env sh .sqa/script.gamy-buff-axolotl.sh
+        container: qc.ver_homely-myrtle-affenpinscher
 timeout: 5400
