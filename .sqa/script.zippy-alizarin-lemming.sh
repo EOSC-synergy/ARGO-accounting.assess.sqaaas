@@ -1,4 +1,4 @@
 (
 cd github.com/ARGOeu/argo-accounting &&
-    jsonlint-cli "**/*.json"
+    licensee detect . --json
 )
