@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/ARGOeu/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-maroon-capybara.sh
-        container: qc.acc_breezy-chartreuse-whale
+        - /usr/bin/env sh .sqa/script.homey-orchid-corgi.sh
+        container: qc.acc_scanty-gamboge-rottweiler
   QC.Doc:
     repos:
       github.com/ARGOeu/argo-accounting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-amber-balinese.sh
-        container: qc.doc_homely-linen-hornet
+        - /usr/bin/env sh .sqa/script.surly-puce-bear.sh
+        container: qc.doc_homey-cerulean-dogfish
       github.com/ARGOeu/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-rose-fousek.sh
-        container: qc.doc_cranky-platinum-lion
+        - /usr/bin/env sh .sqa/script.thirsty-violet-goat.sh
+        container: qc.doc_hilly-emerald-heron
       github.com/ARGOeu/argo-accounting markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-grey-maltese.sh
-        container: qc.doc_gimpy-purple-wolverine
+        - /usr/bin/env sh .sqa/script.gummy-cinnabar-seal.sh
+        container: qc.doc_scanty-ultramarine-swan
   QC.Lic:
     repos:
       github.com/ARGOeu/argo-accounting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-lime-bobcat.sh
-        container: qc.lic_nippy-cream-newfoundland
+        - /usr/bin/env sh .sqa/script.baggy-rose-donkey.sh
+        container: qc.lic_randy-plum-bullfrog
   QC.Met:
     repos:
       github.com/ARGOeu/argo-accounting cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-cerulean-insect.sh
-        container: qc.met_pokey-lime-coral
+        - /usr/bin/env sh .sqa/script.boozy-magnolia-panda.sh
+        container: qc.met_cloudy-seashell-gorilla
   QC.Ver:
     repos:
       github.com/ARGOeu/argo-accounting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-buff-axolotl.sh
-        container: qc.ver_homely-myrtle-affenpinscher
+        - /usr/bin/env sh .sqa/script.nippy-zucchini-ibis.sh
+        container: qc.ver_stuffy-myrtle-moose
 timeout: 5400
