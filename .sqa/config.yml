@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/nikosT/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-purple-binturong.sh
-        container: qc.acc_geeky-aqua-ocelot
+        - /usr/bin/env sh .sqa/script.sickly-tangerine-crane.sh
+        container: qc.acc_pretty-khaki-hummingbird
   QC.Doc:
     repos:
       github.com/nikosT/argo-accounting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-corn-paradise.sh
-        container: qc.doc_pokey-xanthic-zorse
+        - /usr/bin/env sh .sqa/script.pretty-aqua-moorhen.sh
+        container: qc.doc_baggy-purple-labradoodle
       github.com/nikosT/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-beige-liger.sh
-        container: qc.doc_droopy-dandelion-malamute
+        - /usr/bin/env sh .sqa/script.clammy-charcoal-chipmunk.sh
+        container: qc.doc_boozy-magenta-rottweiler
       github.com/nikosT/argo-accounting markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-amethyst-audemer.sh
-        container: qc.doc_pasty-periwinkle-civet
+        - /usr/bin/env sh .sqa/script.stuffy-mauve-chin.sh
+        container: qc.doc_stealthy-ivory-cockroach
   QC.Lic:
     repos:
       github.com/nikosT/argo-accounting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-carmine-newfoundland.sh
-        container: qc.lic_woozy-razzmatazz-bear
+        - /usr/bin/env sh .sqa/script.scaly-denim-coati.sh
+        container: qc.lic_messy-orchid-centipede
   QC.Met:
     repos:
       github.com/nikosT/argo-accounting cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-smalt-drever.sh
-        container: qc.met_wimpy-carmine-fousek
+        - /usr/bin/env sh .sqa/script.hazy-carmine-cockroach.sh
+        container: qc.met_cheeky-ochre-mouse
   QC.Sty:
     repos:
       github.com/nikosT/argo-accounting checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-myrtle-insect.sh
-        container: qc.sty_ready-champagne-sheepdog
+        - /usr/bin/env sh .sqa/script.fuzzy-amethyst-gibbon.sh
+        container: qc.sty_sunny-crimson-bombay
       github.com/nikosT/argo-accounting hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-orchid-cockroach.sh
-        container: qc.sty_randy-cobalt-scorpion
+        - /usr/bin/env sh .sqa/script.homey-silver-gharial.sh
+        container: qc.sty_silly-xanthic-heron
       github.com/nikosT/argo-accounting jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-white-spaniel.sh
-        container: qc.sty_beady-lavender-avocet
+        - /usr/bin/env sh .sqa/script.snippy-crimson-markhor.sh
+        container: qc.sty_chewy-salmon-olm
   QC.Ver:
     repos:
       github.com/nikosT/argo-accounting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-chocolate-newt.sh
-        container: qc.ver_pretty-lavender-starfish
+        - /usr/bin/env sh .sqa/script.droopy-chartreuse-grouse.sh
+        container: qc.ver_gummy-plum-ant
 timeout: 5400
