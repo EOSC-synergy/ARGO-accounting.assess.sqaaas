@@ -1,66 +1,66 @@
 config:
   credentials: []
   project_repos:
-    github.com/ARGOeu/argo-accounting:
-      branch: main
-      repo: https://github.com/ARGOeu/argo-accounting
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/nikosT/argo-accounting:
+      branch: devel
+      repo: https://github.com/nikosT/argo-accounting
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/ARGOeu/argo-accounting git:
+      github.com/nikosT/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-celadon-tamarin.sh
-        container: qc.acc_sunny-firebrick-spaniel
+        - /usr/bin/env sh .sqa/script.sleepy-purple-binturong.sh
+        container: qc.acc_geeky-aqua-ocelot
   QC.Doc:
     repos:
-      github.com/ARGOeu/argo-accounting find_doc_files.py:
+      github.com/nikosT/argo-accounting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-gamboge-hedgehog.sh
-        container: qc.doc_goopy-scarlet-quoll
-      github.com/ARGOeu/argo-accounting git:
+        - /usr/bin/env sh .sqa/script.zippy-corn-paradise.sh
+        container: qc.doc_pokey-xanthic-zorse
+      github.com/nikosT/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-brown-lion.sh
-        container: qc.doc_nerdy-bistre-wombat
-      github.com/ARGOeu/argo-accounting markdownlint:
+        - /usr/bin/env sh .sqa/script.sunny-beige-liger.sh
+        container: qc.doc_droopy-dandelion-malamute
+      github.com/nikosT/argo-accounting markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-azure-saola.sh
-        container: qc.doc_stuffy-tan-walrus
+        - /usr/bin/env sh .sqa/script.paltry-amethyst-audemer.sh
+        container: qc.doc_pasty-periwinkle-civet
   QC.Lic:
     repos:
-      github.com/ARGOeu/argo-accounting licensee:
+      github.com/nikosT/argo-accounting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-mustard-buzzard.sh
-        container: qc.lic_cheeky-amethyst-seal
+        - /usr/bin/env sh .sqa/script.freaky-carmine-newfoundland.sh
+        container: qc.lic_woozy-razzmatazz-bear
   QC.Met:
     repos:
-      github.com/ARGOeu/argo-accounting cff-converter-python:
+      github.com/nikosT/argo-accounting cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-peach-badger.sh
-        container: qc.met_cranky-viridian-sparrow
+        - /usr/bin/env sh .sqa/script.goopy-smalt-drever.sh
+        container: qc.met_wimpy-carmine-fousek
   QC.Sty:
     repos:
-      github.com/ARGOeu/argo-accounting checkstyle:
+      github.com/nikosT/argo-accounting checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-red-dhole.sh
-        container: qc.sty_tacky-lemon-vole
-      github.com/ARGOeu/argo-accounting hadolint:
+        - /usr/bin/env sh .sqa/script.zippy-myrtle-insect.sh
+        container: qc.sty_ready-champagne-sheepdog
+      github.com/nikosT/argo-accounting hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-orange-macaque.sh
-        container: qc.sty_beady-jade-zebra
-      github.com/ARGOeu/argo-accounting jsonlint:
+        - /usr/bin/env sh .sqa/script.slimy-orchid-cockroach.sh
+        container: qc.sty_randy-cobalt-scorpion
+      github.com/nikosT/argo-accounting jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-chocolate-meerkat.sh
-        container: qc.sty_cloudy-amethyst-caterpillar
+        - /usr/bin/env sh .sqa/script.freaky-white-spaniel.sh
+        container: qc.sty_beady-lavender-avocet
   QC.Ver:
     repos:
-      github.com/ARGOeu/argo-accounting get_git_tags.py:
+      github.com/nikosT/argo-accounting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-red-squirrel.sh
-        container: qc.ver_leaky-bronze-kiwi
+        - /usr/bin/env sh .sqa/script.foggy-chocolate-newt.sh
+        container: qc.ver_pretty-lavender-starfish
 timeout: 5400
