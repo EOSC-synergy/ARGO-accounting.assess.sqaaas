@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/nikosT/argo-accounting &&
-    hadolint mongo-setup/Dockerfile --failure-threshold error
+cd github.com/ARGOeu/argo-accounting &&
+    get_git_tags.py
 )

@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/nikosT/argo-accounting &&
+cd github.com/ARGOeu/argo-accounting &&
     jsonlint-cli "**/*.json"
 )

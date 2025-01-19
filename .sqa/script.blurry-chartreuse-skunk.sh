@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/nikosT/argo-accounting &&
-    mvn checkstyle:check
+cd github.com/ARGOeu/argo-accounting &&
+    git rev-parse --is-inside-work-tree 
 )
