@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/ARGOeu/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.marigold_serene_chinchilla.sh
-        container: qc.acc_cream_artistic_raven
+        - /usr/bin/env sh .sqa/script.lapis_polite_hawk.sh
+        container: qc.acc_rose_bewildered_meerkat
   QC.Doc:
     repos:
       github.com/ARGOeu/argo-accounting find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scarlet_passionate_toad.sh
-        container: qc.doc_silver_fearless_buffalo
+        - /usr/bin/env sh .sqa/script.caramel_tranquil_otter.sh
+        container: qc.doc_horizon_flexible_quokka
       github.com/ARGOeu/argo-accounting git:
         commands:
-        - /usr/bin/env sh .sqa/script.gamboge_sweet_griffin.sh
-        container: qc.doc_mist_clever_bear
+        - /usr/bin/env sh .sqa/script.arctic_fair_kirin.sh
+        container: qc.doc_umber_exuberant_gerbil
       github.com/ARGOeu/argo-accounting markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.beige_fierce_pegasus.sh
-        container: qc.doc_teal_dizzy_gerbil
+        - /usr/bin/env sh .sqa/script.iris_sympathetic_bison.sh
+        container: qc.doc_cayenne_independent_jellyfish
   QC.Lic:
     repos:
       github.com/ARGOeu/argo-accounting licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lapis_bubbly_heron.sh
-        container: qc.lic_cobalt_romantic_parrot
+        - /usr/bin/env sh .sqa/script.silver_humorous_toad.sh
+        container: qc.lic_seafoam_skeptical_capybara
   QC.Met:
     repos:
       github.com/ARGOeu/argo-accounting cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.kiwi_daring_condor.sh
-        container: qc.met_azure_realistic_raven
+        - /usr/bin/env sh .sqa/script.slate_understanding_otter.sh
+        container: qc.met_thistle_supportive_eagle
   QC.Sty:
     repos:
       github.com/ARGOeu/argo-accounting checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.tide_rational_wildcat.sh
-        container: qc.sty_flax_rustic_chimpanzee
+        - /usr/bin/env sh .sqa/script.currant_sociable_moth.sh
+        container: qc.sty_indigo_inventive_quail
       github.com/ARGOeu/argo-accounting hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.lime_affectionate_caiman.sh
-        container: qc.sty_flamingo_humble_crocodile
+        - /usr/bin/env sh .sqa/script.pine_clever_seahorse.sh
+        container: qc.sty_jasmine_sad_turkey
       github.com/ARGOeu/argo-accounting jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.apricot_fair_warthog.sh
-        container: qc.sty_hunter_upbeat_lemur
+        - /usr/bin/env sh .sqa/script.cinnamon_compassionate_python.sh
+        container: qc.sty_teal_enigmatic_tiger
   QC.Ver:
     repos:
       github.com/ARGOeu/argo-accounting get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chartreuse_calm_wildcat.sh
-        container: qc.ver_mauve_sad_kangaroo
+        - /usr/bin/env sh .sqa/script.gold_tenacious_bat.sh
+        container: qc.ver_pansy_zealous_cheetah
 timeout: 5400
